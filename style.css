@@ -48,6 +48,7 @@ aside {
     border-radius: 50%;
     text-align: center;
     margin-bottom: 10px;
+    border: 2px solid white;
 }
 .profilePict h4{
     margin:0;
