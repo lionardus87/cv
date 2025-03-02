@@ -61,6 +61,14 @@ aside {
     background-color:rgb(195, 195, 169);
 }
 
+span.phoneNumber{
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
 main {
     background-color: beige;
     width: 100%;
