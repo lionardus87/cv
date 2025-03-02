@@ -60,8 +60,10 @@ aside {
     color:rgb(97, 47, 47);
     background-color:rgb(195, 195, 169);
 }
-
-span.phoneNumber{
+meta[name="format-detection"]{
+    content:"telephone-no"
+}
+span .phoneNumber{
     font-family: inherit;
     font-size: inherit;
     font-style: inherit;
