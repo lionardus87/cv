@@ -1,150 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Resume</title>
+		<title>Curriculum Vitae</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
 		/>
-		
 	</head>
-	<body>
-		<div class="content">
-			<aside class="sidebar">
-				<div class="profilePict">
-					<img src="./pp6.jpeg" alt="Profile Picture" />
-					<h4>LIONARDUS PRANOTO</h4>
-					<h5>WEB DEVELOPER</h5>
+	<body class="d-flex flex-column min-vh-100">
+		<nav class="navbar navbar-expand">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img
+						src="./images/Logo.png"
+						alt="Profile"
+						width="60"
+						height="60"
+						class="rounded-circle"
+					/><strong>LIONARDUS PRANOTO</strong>
+				</a>
+				<div
+					class="collapse navbar-collapse list-unstyled"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li><i class="bi bi-laptop"></i> Software Developer</li>
+					</ul>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">ABOUT ME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">RESUME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">PROJECT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CONTACT</a>
+					</li>
 				</div>
-				<div>
-					<section>
-						<h3>Personal Information</h3>
-						<!-- <p>Name : Lionardus Yudhi Pranoto</p> -->
-						<span class="phoneNumber">Phone : (+61) 481 160 555</span>
-						<p>Address : Arncliffe, NSW, 2205</p>
-						<p>Email : yudhi_lee@hotmail.com</p>
-					</section>
-					<section>
-						<h3>Skills</h3>
-						<ul>
-							<li>Javascript, Node JS, React</li>
-							<li>Visual Studio Code</li>
-							<li>Windows and MacOS</li>
-							<li>Microsoft Office 365</li>
-						</ul>
-					</section>
-					<section>
-						<h3>References</h3>
-						<p>Available upon request</p>
-					</section>
+			</div>
+		</nav>
+
+		<!-- content -->
+		<div class="flex-grow-1 d-flex">
+			<!-- Left Column -->
+			<div
+				class="left-background col-5 d-flex justify-content-end align-items-center"
+			>
+				<div class="profile-card text-center rounded">
+					<img
+						src="./images/LinkedinProfile.jpg"
+						class="profile-pic rounded-4"
+						width="300"
+						height="400"
+						alt="Profile Picture"
+					/>
+					<h4 class="fw-bold mt-3">LIONARDUS PRANOTO</h4>
+					<small class="text-uppercase text-muted">Software Developer</small>
+					<hr style="width: 50px; margin: 1rem auto" />
+					<div class="social-media d-flex justify-content-center gap-3">
+						<a href="https://www.facebook.com/lionardus"
+							><i class="bi bi-facebook text-dark fs-5"></i
+						></a>
+						<a href="https://www.instagram.com/lio_lee_/"
+							><i class="bi bi-linkedin text-dark fs-5"></i
+						></a>
+						<a href="https://www.linkedin.com/in/lionardus-pranoto-018961166/"
+							><i class="bi bi-instagram text-dark fs-5"></i
+						></a>
+					</div>
 				</div>
-			</aside>
+			</div>
 
-			<main>
-				<section>
-					<h2>EXPERIENCE</h2>
-					<article>
-						<ul>
-							<li>Group Head Barista, May, 2022 - Dec, 2024 at Sonoma Bakery</li>
-							<li>
-								Cafe Manager, July, 2017 - Jan, 2022 at South Coffee and Food,
-								Barangaroo
-							</li>
-							<li>
-								Head Barista, July, 2015 - July, 2017 at Steel Espresso, Sydney CBD
-							</li>
-						</ul>
-					</article>
-				</section>
-
-				<section>
-					<h2>PROJECT</h2>
-					<article>
-						<h3>Diploma of Information Technology TAFE NSW - St. Leonards</h3>
-						<ul>
-							<li>
-								Build an eCommerce Website - Developed a basic eCommerce website
-								with a product catalogue, shopping cart, and log in. Utilised
-								HTML, CSS, JavaScript, Github, Firebase and React with a MySQL
-								database.
-							</li>
-							<li>
-								Skilled in deploying Azure and Oracle Cloud solutions, with
-								experience in virtualisation, secure authentication, and live
-								migration. Proficient in virtual machine management, resource
-								optimisation, and access control. Expert in Azure Active
-								Directory and Oracle Identity Cloud Service, ensuring scalable,
-								high- availability cloud environments aligned with business
-								needs.
-							</li>
-							<li>
-								Developed a secure Python-based login system implementing user
-								authentication, password hashing, and input validation. Enhanced
-								security through error handling and limited login attempts,
-								ensuring robust access control. Gained experience with user
-								interface and backend logic, demonstrating strong
-								problem-solving skills and attention to cybersecurity best
-								practices.
-							</li>
-						</ul>
-					</article>
-				</section>
-
-				<section>
-					<h2>EDUCATION</h2>
-					<article>
-						<ul>
-							<li>
-								Diploma of Information Technology, TAFE NSW - St. Leonards,
-								Expected graduate in December 2024
-							</li>
-							<li>Cert. III of Patisserie, SWSi TAFE - Padstow, 2013</li>
-							<li>
-								Cert. IV of Commercial Cookery, TAFE NSW - Ultimo, 2011 - 2013
-							</li>
-							<li>
-								Adv. Dip. of Hospitality Management, Sydney Business and Travel
-								Academy - Sydney CBD, 2009 - 2011
-							</li>
-						</ul>
-					</article>
-				</section>
-
-				<section>
-					<h2>HOBBY</h2>
-					<article>
+			<!-- Right Column -->
+			<div
+				class="right-background col-7 d-flex align-items-center justify-content-start"
+			>
+				<div
+					class="about-me text-start w-100 rounded ps-2 d-flex flex-column justify-content-center"
+				>
+					<h1 class="display-4 fw-bold mt-4">Hello 👋👋</h1>
+					<p class="lead">
+						Coffee Lover
+						<i class="bi bi-cup-hot"></i> | Soccer Fans ⚽ | Tech Nerd 📱
+					</p>
+					<p>
+						Tech nerd with a big passion for all things IT. After years in
+						hospitality, I’ve swapped the apron for algorithms and I’m loving
+						every minute of it. Currently diving deep into software development,
+						always up for a new challenge. I run on coffee, curiosity, and a bit
+						of wanderlust—whether it’s learning a new tech stack or planning my
+						next travel adventure.
+					</p>
+					<p>
 						In my free time, I prioritise staying active and balanced. I play
-						badminton regularly, which hones my focus and agility, and enjoy a
-						competitive futsal match to keep my teamwork skills sharp and energy
-						high. Hitting the gym rounds out my fitness routine, helping me
-						maintain physical health and a resilient mindset outside of work.
-						Every weekend, my wife, our three dogs, and I unwind by exploring
-						local brunch spots. It's a cherished ritual that keeps us connected,
-						gives us time to relax, and lets me recharge for the week ahead.
-						This blend of activities supports my work-life balance.
-					</article>
-				</section>
-			</main>
+						badminton regularly, which hones my focus and agility, and I make
+						time for the gym to stay strong and maintain a resilient mindset
+						outside of work. Every weekend, my wife, our three dogs, and I
+						unwind by exploring local brunch spots. It's a cherished ritual that
+						keeps us connected, gives us time to relax, and lets me recharge for
+						the week ahead. This blend of activities supports my work-life
+						balance.
+					</p>
+				</div>
+			</div>
 		</div>
 
-		<footer>
-			<a
-				href="https://www.linkedin.com/in/lionardus-pranoto-018961166/"
-				target="_blank"
-				><i class="fab fa-linkedin"></i
-			></a>
-            <a
-				href="https://lionardus87.github.io/cv/"
-				target="_blank"
-				><i class="fab fa-github"></i
-			></a>
-			<a href="https://www.instagram.com/lio_lee_/" target="_blank"
-				><i class="fab fa-instagram"></i
-			></a>
-			<p>Created March, 2025</p>
+		<!-- Footer -->
+		<footer class="text-center small text-muted">
+			&copy; 2025 by LIONARDUS PRANOTO. Proudly created with Bootstrap.
 		</footer>
 	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
