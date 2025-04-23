@@ -8,31 +8,59 @@ nav {
 
 .left-background {
 	background-color: antiquewhite;
+	padding: 2rem 0;
+	justify-content: end;
 }
 
 .right-background {
 	background-color: whitesmoke;
-	height: 100vh;
+	padding: 2rem 0;
+	justify-content: start;
 }
 
 .profile-card {
 	background-color: whitesmoke;
-	height: 530px;
-	width: 65%;
+	max-width: 90%;
+	width: 360px;
+	height: 400px;
+	align-content: center;
 }
 
 .profile-pic {
 	margin: 10px;
-	width: auto;
+	width: 170px;
+	height: auto;
+	object-fit: cover;
 }
 
 .about-me {
 	background-color: white;
-	height: 530px;
-	max-width: 80%;
+	max-width: 90%;
+	width: 500px;
+	height: 400px;
 }
 
 footer {
 	background-color: burlywood;
 	padding: 10px;
+}
+
+#aboutToast {
+	min-width: 250px;
+	z-index: 1080; /* make sure it shows above other content */
+}
+@media only screen and (max-width: 1000px) {
+	.left-background {
+		justify-content: center;
+	}
+	.right-background {
+		justify-content: center;
+	}
+	.profile-card {
+		height: auto;
+		padding-bottom: 10px;
+	}
+	.about-me {
+		height: auto;
+	}
 }

@@ -21,7 +21,7 @@
 		/>
 	</head>
 	<body class="d-flex flex-column min-vh-100">
-		<nav class="navbar navbar-expand">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img
@@ -32,54 +32,69 @@
 						class="rounded-circle"
 					/><strong>LIONARDUS PRANOTO</strong>
 				</a>
-				<div
-					class="collapse navbar-collapse list-unstyled"
-					id="navbarSupportedContent"
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
 				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li><i class="bi bi-laptop"></i> Software Developer</li>
+						<li class="nav-item d-flex align-items-center">
+							<span class="nav-link"
+								><i class="bi bi-laptop"></i> Software Developer</span
+							>
+						</li>
 					</ul>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">ABOUT ME</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">RESUME</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">PROJECT</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">CONTACT</a>
-					</li>
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>ABOUT ME</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">RESUME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">PROJECT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">CONTACT</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 
 		<!-- content -->
-		<div class="flex-grow-1 d-flex">
+		<div class="flex-grow-1 d-flex flex-column flex-lg-row">
 			<!-- Left Column -->
-			<div
-				class="left-background col-5 d-flex justify-content-end align-items-center"
-			>
+			<div class="left-background col-12 col-lg-5 d-flex align-items-center">
 				<div class="profile-card text-center rounded">
 					<img
 						src="./images/LinkedinProfile.jpg"
 						class="profile-pic rounded-4"
-						width="300"
-						height="400"
 						alt="Profile Picture"
 					/>
 					<h4 class="fw-bold mt-3">LIONARDUS PRANOTO</h4>
 					<small class="text-uppercase text-muted">Software Developer</small>
 					<hr style="width: 50px; margin: 1rem auto" />
 					<div class="social-media d-flex justify-content-center gap-3">
-						<a href="https://www.facebook.com/lionardus"
+						<a href="https://www.facebook.com/lionardus" target="_blank"
 							><i class="bi bi-facebook text-dark fs-5"></i
 						></a>
-						<a href="https://www.instagram.com/lio_lee_/"
+						<a href="https://www.instagram.com/lio_lee_/" target="_blank"
 							><i class="bi bi-linkedin text-dark fs-5"></i
 						></a>
-						<a href="https://www.linkedin.com/in/lionardus-pranoto-018961166/"
+						<a
+							href="https://www.linkedin.com/in/lionardus-pranoto-018961166/"
+							target="_blank"
 							><i class="bi bi-instagram text-dark fs-5"></i
 						></a>
 					</div>
@@ -87,35 +102,100 @@
 			</div>
 
 			<!-- Right Column -->
-			<div
-				class="right-background col-7 d-flex align-items-center justify-content-start"
-			>
+			<div class="right-background col-12 col-lg-7 d-flex align-items-center">
 				<div
-					class="about-me text-start w-100 rounded ps-2 d-flex flex-column justify-content-center"
+					class="about-me text-start rounded p-3 d-flex flex-column justify-content-center"
 				>
-					<h1 class="display-4 fw-bold mt-4">Hello 👋👋</h1>
+					<h1 class="display-5 fw-bold">Hello 👋👋</h1>
 					<p class="lead">
 						Coffee Lover
-						<i class="bi bi-cup-hot"></i> | Soccer Fans ⚽ | Tech Nerd 📱
+						<i class="bi bi-cup-hot"></i> | Soccer Fans ⚽ | Gym Junkie 🏋
 					</p>
-					<p>
-						Tech nerd with a big passion for all things IT. After years in
-						hospitality, I’ve swapped the apron for algorithms and I’m loving
-						every minute of it. Currently diving deep into software development,
-						always up for a new challenge. I run on coffee, curiosity, and a bit
-						of wanderlust—whether it’s learning a new tech stack or planning my
-						next travel adventure.
-					</p>
-					<p>
-						In my free time, I prioritise staying active and balanced. I play
-						badminton regularly, which hones my focus and agility, and I make
-						time for the gym to stay strong and maintain a resilient mindset
-						outside of work. Every weekend, my wife, our three dogs, and I
-						unwind by exploring local brunch spots. It's a cherished ritual that
-						keeps us connected, gives us time to relax, and lets me recharge for
-						the week ahead. This blend of activities supports my work-life
-						balance.
-					</p>
+					<div class="info-button">
+						<button
+							type="button"
+							class="btn btn-primary rounded-4"
+							id="hobbyBtn"
+						>
+							Hobby
+						</button>
+
+						<div class="toast-container">
+							<div
+								id="hobbyToast"
+								class="toast"
+								role="alert"
+								aria-live="assertive"
+								aria-atomic="true"
+							>
+								<div class="toast-header">
+									<strong class="me-auto">Hobby</strong>
+
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="toast"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="toast-body">
+									In my free time, I prioritise staying active and balanced. I
+									play badminton regularly, which hones my focus and agility,
+									and I make time for the gym to stay strong and maintain a
+									resilient mindset outside of work. Every weekend, my wife, our
+									three dogs, and I unwind by exploring local brunch spots. It's
+									a cherished ritual that keeps us connected, gives us time to
+									relax, and lets me recharge for the week ahead. This blend of
+									activities supports my work-life balance.
+								</div>
+							</div>
+						</div>
+						<button
+							type="button"
+							class="btn btn-primary rounded-4"
+							id="aboutBtn"
+						>
+							About Me
+						</button>
+
+						<div class="toast-container position-relative d-inline-block">
+							<div
+								id="aboutToast"
+								class="toast position-absolute start-100 top-0 ms-2"
+								role="alert"
+								aria-live="assertive"
+								aria-atomic="true"
+							>
+								<div class="toast-header">
+									<strong class="me-auto">About me</strong>
+
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="toast"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="toast-body">
+									Tech nerd with a big passion for all things IT. After years in
+									hospitality, I’ve swapped the apron for algorithms and I’m
+									loving every minute of it. Currently diving deep into software
+									development, always up for a new challenge. I run on coffee,
+									curiosity, and a bit of wanderlust—whether it’s learning a new
+									tech stack or planning my next travel adventure.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="border rounded-5 p-3 m-3">
+						<h5>
+							<em
+								>"The people who are crazy enough to think the can change the
+								world, are the ones who do"</em
+							>
+						</h5>
+						<p class="text-end">- Steve Jobs</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -126,4 +206,5 @@
 		</footer>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="index.js"></script>
 </html>
