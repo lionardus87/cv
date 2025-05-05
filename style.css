@@ -39,6 +39,15 @@ nav {
 	width: 500px;
 	height: 400px;
 }
+.profile-info {
+	background-color: antiquewhite;
+}
+.history {
+	background-color: whitesmoke;
+}
+h3 {
+	color: mediumseagreen;
+}
 
 footer {
 	background-color: burlywood;
@@ -48,6 +57,10 @@ footer {
 #aboutToast {
 	min-width: 250px;
 	z-index: 1080; /* make sure it shows above other content */
+}
+
+.photo img {
+	max-width: 30%;
 }
 @media only screen and (max-width: 1000px) {
 	.left-background {
